@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>VEN Y PREPÁRATE</title>
+
+    <link rel="stylesheet" href="proyecto.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Climate+Crisis&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="main-content">
+
+        <!-- BANNER SUPERIOR -->
+        <div class="banner-apartado">
+            <img id="bannerPrincipal"
+                 src="banner inicio.jpeg"
+                 alt="Banner del apartado">
+        </div>
+
+        <!-- MENÚ -->
+        <nav class="menu">
+            <ul>
+
+                <li>
+                    <a href="#" onclick="mostrarInicio(); return false;">
+                        Inicio
+                    </a>
+                </li>
+
+                <li class="submenu">
+                    <a href="#" onclick="toggleSubmenu(this); return false;">
+                        Nosotros
+                    </a>
+
+                    <ul>
+                        <li><a href="#" onclick="mostrarImagen(4); return false;">Misión</a></li>
+                        <li><a href="#" onclick="mostrarImagen(3); return false;">Visión</a></li>
+                        <li><a href="#" onclick="mostrarImagen(1); return false;">Objetivos generales</a></li>
+                        <li><a href="#" onclick="mostrarImagen(2); return false;">Objetivos específicos</a></li>
+                        <li><a href="#" onclick="mostrarImagen(5); return false;">Pregunta problema</a></li>
+                        <li><a href="#" onclick="mostrarImagen(26); return false;">Cronograma</a></li>
+                    </ul>
+                </li>
+
+                <li class="submenu">
+                    <a href="#" onclick="toggleSubmenu(this); return false;">
+                        Solución tecnológica
+                    </a>
+
+                    <ul>
+                        <li><a href="#" onclick="mostrarEvidencias(); return false;">Evidencias</a></li>
+                        <li><a href="#" onclick="mostrarApp(); return false;">APP</a></li>
+                        <li><a href="#" onclick="mostrarSolucion(); return false;">Solución</a></li>
+                    </ul>
+                </li>
+
+                <!-- CONTACTO CON SUBMENÚ -->
+                <li class="submenu">
+                    <a href="#" onclick="toggleSubmenu(this); return false;">
+                        Contacto
+                    </a>
+
+                    <ul>
+                        <li>
+                            <a href="#" onclick="mostrarContacto(); return false;">
+                                Documento del proyecto
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" onclick="mostrarQuienesSomos(); return false;">
+                                Quiénes somos
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+            </ul>
+        </nav>
+
+        <!-- ENCABEZADO -->
+        <header class="header">
+            <div class="titulo">
+                <img src="logo3.png" alt="Logo" class="logo">
+                <h1>VEN Y PREPÁRATE</h1>
+            </div>
+        </header>
+
+        <!-- CONTENIDO PRINCIPAL -->
+        <div id="contenedor">
+
+            <!-- IMÁGENES DE NOSOTROS -->
+            <img id="img1" src="obj.general.png" alt="Objetivos generales">
+            <img id="img2" src="obj.especifico.png" alt="Objetivos específicos">
+            <img id="img3" src="vision.png" alt="Visión">
+            <img id="img4" src="mision.png" alt="Misión">
+            <img id="img5" src="Pregunta problema .PNG" alt="Pregunta problema">
+            <img id="img26" src="Cronograma Ven y Prepárate.png" alt="Cronograma">
+
+            <!-- VIDEO DE INICIO -->
+            <section id="podcast">
+                <div class="contenedor-video">
+                    <video controls autoplay muted playsinline poster="inicio.png">
+                        <source src="Postcast .mp4" type="video/mp4">
+                        Tu navegador no puede reproducir este video.
+                    </video>
+                </div>
+            </section>
+
+            <!-- EVIDENCIAS -->
+            <img id="img6" src="Evidencia1.jpeg" alt="Evidencia 1">
+            <img id="img7" src="Evidencia2.jpeg" alt="Evidencia 2">
+            <img id="img8" src="Evidencia3.jpeg" alt="Evidencia 3">
+            <img id="img9" src="Evidencia4.jpeg" alt="Evidencia 4">
+            <img id="img10" src="Evidencia5.jpeg" alt="Evidencia 5">
+            <img id="img11" src="Evidencia6.jpeg" alt="Evidencia 6">
+            <img id="img12" src="Evidencia7.jpeg" alt="Evidencia 7">
+            <img id="img13" src="Evidencia8.jpeg" alt="Evidencia 8">
+            <img id="img14" src="Evidencia9.jpeg" alt="Evidencia 9">
+            <img id="img15" src="Evidencia10.jpeg" alt="Evidencia 10">
+            <img id="img16" src="Evidencia11.jpeg" alt="Evidencia 11">
+            <img id="img17" src="Evidencia12.jpeg" alt="Evidencia 12">
+            <img id="img18" src="Evidencia13.jpeg" alt="Evidencia 13">
+            <img id="img19" src="Evidencia14.jpeg" alt="Evidencia 14">
+            <img id="img20" src="Evidencia15.jpeg" alt="Evidencia 15">
+            <img id="img21" src="Evidencia16.jpeg" alt="Evidencia 16">
+            <img id="img22" src="Evidencia17.jpeg" alt="Evidencia 17">
+            <img id="img23" src="Evidencia18.jpeg" alt="Evidencia 18">
+            <img id="img24" src="Evidencia19.jpeg" alt="Evidencia 19">
+            <img id="img27" src="Evidencia20.jpeg" alt="Evidencia 20">
+            <img id="img28" src="Evidencia21.jpeg" alt="Evidencia 21">
+            <img id="img29" src="Evidencia22.jpeg" alt="Evidencia 22">
+            <img id="img30" src="Evidencia23.jpeg" alt="Evidencia 23">
+
+            <!-- BOTONES DE EVIDENCIAS -->
+            <div id="botonesEvidencias">
+
+                <button onclick="evidenciaAnterior()">❮ Anterior</button>
+
+                <span id="numeroEvidencia">Evidencia 1 de 25</span>
+
+                <button onclick="evidenciaSiguiente()">Siguiente ❯</button>
+
+            </div>
+
+            <!-- APLICACIÓN -->
+            <div id="contenidoApp">
+
+                <h2>APP</h2>
+
+                <div class="juego">
+                    <div class="juegoPantalla">
+
+                        <iframe
+                            src="https://arcade.makecode.com/S96332-60936-11610-61507"
+                            title="Aplicación interactiva"
+                            allowfullscreen
+                            sandbox="allow-popups allow-forms allow-scripts allow-same-origin"
+                            frameborder="0">
+                        </iframe>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- SOLUCIÓN DEL PROYECTO -->
+            <div id="contenidoSolucion">
+
+                <h2>¿Cómo soluciona la aplicación la problemática de nuestro proyecto?</h2>
+
+                <p>
+                    Nuestra aplicación “Ven y Prepárate” busca ayudar a los estudiantes
+                    de grado décimo a fortalecer sus conocimientos en Matemáticas e
+                    Inglés mediante un juego interactivo. A través de esta herramienta,
+                    los estudiantes pueden practicar, responder preguntas y aprender
+                    de una forma más entretenida, diferente a los métodos tradicionales
+                    de estudio.
+
+                    La aplicación contribuye a solucionar la problemática identificada
+                    porque promueve la práctica constante, aumenta la motivación y
+                    permite que los estudiantes refuercen sus conocimientos para
+                    prepararse con anticipación para las pruebas ICFES. Además, utiliza
+                    la tecnología como un recurso educativo que puede hacer que el
+                    aprendizaje sea más dinámico y participativo.
+
+                    De esta manera, “Ven y Prepárate” complementa las actividades del
+                    proyecto, como los talleres y los simulacros tipo ICFES, y busca
+                    que los estudiantes desarrollen mayor confianza al responder
+                    preguntas y mejoren progresivamente sus competencias académicas.
+                </p>
+
+            </div>
+
+            <!-- CONTACTO: DOCUMENTO PDF -->
+            <div id="contenidoContacto">
+
+                <h2>Documento del proyecto</h2>
+
+                <p>Consulta nuestro documento de comunicación del proyecto.</p>
+
+                <div class="visor-pdf">
+                    <iframe
+                        src="Trabajo_de_grado_Yuralis_Medrano_y_Luna_Gonzalez_APA7_revisado (1).pdf"
+                        title="Documento de comunicación del proyecto">
+                    </iframe>
+                </div>
+
+                <a
+                    href="Trabajo_de_grado_Yuralis_Medrano_y_Luna_Gonzalez_APA7_revisado (1).pdf"
+                    download
+                    class="boton-descarga">
+                    Descargar documento PDF
+                </a>
+
+            </div>
+
+            <!-- CONTACTO: QUIÉNES SOMOS -->
+            <div id="contenidoQuienesSomos">
+
+                <h2>Quiénes somos</h2>
+
+                <div class="visor-hojas-vida">
+                    <img
+                        id="hojaVidaActual"
+                        src="HOJA DE VIDA Y.png"
+                        alt="Hoja de vida de la primera integrante">
+                </div>
+
+                <div class="botones-hojas-vida">
+
+                    <button onclick="cambiarHojaVida(-1)">
+                        ❮ Anterior
+                    </button>
+
+                    <span id="numeroHojaVida">Hoja de vida 1 de 2</span>
+
+                    <button onclick="cambiarHojaVida(1)">
+                        Siguiente ❯
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        // CONFIGURACIÓN DE EVIDENCIAS
+        let evidenciaActual = 6;
+
+        const primeraEvidencia = 6;
+        const ultimaEvidencia = 30;
+
+        // HOJAS DE VIDA
+        const hojasDeVida = [
+            "HOJA DE VIDA Y.png",
+            "hija de vida L.jpeg"
+        ];
+
+        let hojaVidaActual = 0;
+
+        // CAMBIAR EL BANNER
+        function cambiarBanner(nombreImagen) {
+            document.getElementById("bannerPrincipal").src = nombreImagen;
+        }
+
+        // ABRIR Y CERRAR SUBMENÚS
+        function toggleSubmenu(elemento) {
+            const submenu = elemento.nextElementSibling;
+            const abierto = submenu.classList.contains("abierto");
+
+            cerrarSubmenus();
+
+            if (!abierto) {
+                submenu.classList.add("abierto");
+            }
+        }
+
+        function cerrarSubmenus() {
+            const submenus = document.querySelectorAll(".menu ul li ul");
+
+            submenus.forEach(function(submenu) {
+                submenu.classList.remove("abierto");
+            });
+        }
+
+        // OCULTAR TODOS LOS CONTENIDOS
+        function ocultarTodo() {
+            for (let i = 1; i <= 30; i++) {
+                const imagen = document.getElementById("img" + i);
+
+                if (imagen) {
+                    imagen.style.display = "none";
+                }
+            }
+
+            document.getElementById("podcast").style.display = "none";
+            document.getElementById("botonesEvidencias").style.display = "none";
+            document.getElementById("contenidoApp").style.display = "none";
+            document.getElementById("contenidoSolucion").style.display = "none";
+            document.getElementById("contenidoContacto").style.display = "none";
+            document.getElementById("contenidoQuienesSomos").style.display = "none";
+        }
+
+        // INICIO
+        function mostrarInicio() {
+            cerrarSubmenus();
+            ocultarTodo();
+
+            cambiarBanner("banner inicio.jpeg");
+
+            document.getElementById("podcast").style.display = "block";
+        }
+
+        // MOSTRAR IMÁGENES DE NOSOTROS
+        function mostrarImagen(num) {
+            cerrarSubmenus();
+            ocultarTodo();
+
+            cambiarBanner("banner nosotrso.PNG");
+
+            const imagen = document.getElementById("img" + num);
+
+            if (imagen) {
+                imagen.style.display = "block";
+
+                imagen.classList.remove("animar");
+                void imagen.offsetWidth;
+                imagen.classList.add("animar");
+            }
+        }
+
+        // EVIDENCIAS
+        function mostrarEvidencias() {
+            cerrarSubmenus();
+
+            cambiarBanner("banner solucion.jpeg");
+
+            evidenciaActual = primeraEvidencia;
+
+            mostrarEvidenciaActual();
+        }
+
+        function mostrarEvidenciaActual() {
+            ocultarTodo();
+
+            const imagen = document.getElementById("img" + evidenciaActual);
+
+            if (imagen) {
+                imagen.style.display = "block";
+
+                imagen.classList.remove("animar");
+                void imagen.offsetWidth;
+                imagen.classList.add("animar");
+            }
+
+            document.getElementById("botonesEvidencias").style.display = "flex";
+
+            const numero = evidenciaActual - primeraEvidencia + 1;
+            const total = ultimaEvidencia - primeraEvidencia + 1;
+
+            document.getElementById("numeroEvidencia").textContent =
+                "Evidencia " + numero + " de " + total;
+        }
+
+        function evidenciaSiguiente() {
+            if (evidenciaActual < ultimaEvidencia) {
+                evidenciaActual++;
+                mostrarEvidenciaActual();
+            }
+        }
+
+        function evidenciaAnterior() {
+            if (evidenciaActual > primeraEvidencia) {
+                evidenciaActual--;
+                mostrarEvidenciaActual();
+            }
+        }
+
+        // APLICACIÓN
+        function mostrarApp() {
+            cerrarSubmenus();
+            ocultarTodo();
+
+            cambiarBanner("banner solucion.jpeg");
+
+            document.getElementById("contenidoApp").style.display = "flex";
+        }
+
+        // SOLUCIÓN DEL PROYECTO
+        function mostrarSolucion() {
+            cerrarSubmenus();
+            ocultarTodo();
+
+            cambiarBanner("banner solucion.jpeg");
+
+            document.getElementById("contenidoSolucion").style.display = "flex";
+        }
+
+        // DOCUMENTO DEL PROYECTO
+        function mostrarContacto() {
+            cerrarSubmenus();
+            ocultarTodo();
+
+            cambiarBanner("banner contacto.jpeg");
+
+            document.getElementById("contenidoContacto").style.display = "flex";
+        }
+
+        // QUIÉNES SOMOS
+        function mostrarQuienesSomos() {
+            cerrarSubmenus();
+            ocultarTodo();
+
+            cambiarBanner("banner contacto.jpeg");
+
+            hojaVidaActual = 0;
+
+            actualizarHojaVida();
+
+            document.getElementById("contenidoQuienesSomos").style.display = "flex";
+        }
+
+        // CAMBIAR ENTRE LAS DOS HOJAS DE VIDA
+        function cambiarHojaVida(direccion) {
+            hojaVidaActual += direccion;
+
+            if (hojaVidaActual >= hojasDeVida.length) {
+                hojaVidaActual = 0;
+            }
+
+            if (hojaVidaActual < 0) {
+                hojaVidaActual = hojasDeVida.length - 1;
+            }
+
+            actualizarHojaVida();
+        }
+
+        function actualizarHojaVida() {
+            document.getElementById("hojaVidaActual").src =
+                hojasDeVida[hojaVidaActual];
+
+            document.getElementById("numeroHojaVida").textContent =
+                "Hoja de vida " + (hojaVidaActual + 1) +
+                " de " + hojasDeVida.length;
+
+            document.getElementById("hojaVidaActual").alt =
+                "Hoja de vida " + (hojaVidaActual + 1);
+        }
+
+        // MOSTRAR INICIO AL CARGAR LA PÁGINA
+        window.onload = function() {
+            mostrarInicio();
+        };
+    </script>
+
+</body>
+</html>
